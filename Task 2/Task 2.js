@@ -37,7 +37,7 @@ var obArr =[
 // Find student Name, who got degree between 90 and 100
 var text='';
 for(a in obArr){
-    if(obArr[a].degree >=90 & obArr[a].degree<=100 ){
+    if(obArr[a].degree >=90 && obArr[a].degree<=100 ){
         text+=obArr[a].name+' ';
     }
 }
