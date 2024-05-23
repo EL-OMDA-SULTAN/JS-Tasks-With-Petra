@@ -37,33 +37,43 @@ setSpan();
 
 var newWindow;
 
-function openWindow(){
-    newWindow = window.open('about.html',"_blank","width=250, height=250 ,top=470 ,left=650");
-    newWindow.document.write('<p>This Is New Window</p>');
-    changeColor();
-}
+// function openWindow(){
+//     newWindow = window.open('about.html',"_blank","width=250, height=250 ,top=470 ,left=650");
+//     newWindow.document.write('<p>This Is New Window</p>');
+//     // changeColor();
+// }
 
 function changeColor(){
-    let inputArray = document.getElementsByTagName('input');
-    //console.log(inputArray);
-    for(let i = 0 ; i < inputArray.length ; i++){
-        if(inputArray[i].checked){
-            switch(i){
-                case 0:
-                    newWindow.document.body.style.backgroundColor = 'lightgreen';
-                    newWindow.focus();
-                    break;
-                case 1:
-                    newWindow.document.body.style.backgroundColor = 'lightyellow';
-                    newWindow.blur();
-                    break;
-                case 2:
-                    newWindow.document.body.style.backgroundColor = 'pink';
-                    newWindow.focus();
-                    break;
+    if(newWindow == undefined ){
+        alert('No window Is Opened');
+    }
+    else{
+        let inputArray = document.getElementsByTagName('input');
+        //console.log(inputArray);
+        for(let i = 0 ; i < inputArray.length ; i++){
+            if(inputArray[i].checked){
+                switch(i){
+                    case 0:
+                        newWindow.document.body.style.backgroundColor = 'lightgreen';
+                        newWindow.focus();
+                        break;
+                    case 1:
+                        newWindow.document.body.style.backgroundColor = 'lightyellow';
+                        newWindow.blur();
+                        break;
+                    case 2:
+                        newWindow.document.body.style.backgroundColor = 'pink';
+                        newWindow.focus();
+                        break;
+                }
             }
         }
     }
+}
+
+function openWindow(){
+    newWindow = window.open('about.html',"_blank","width=250, height=250 ,top=470 ,left=650");
+    newWindow.document.write('<p>This Is New Window</p>');
 }
 
 function closeWindow(){
