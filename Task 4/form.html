@@ -7,8 +7,20 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- Form Task -->
-        <form method="get" onsubmit="submitData()">
+        <!-- Form Task"-->
+        <form>
+            <h1>Registration Form </h1>
+            <label for="name">First Name: </label> 
+            <input type="text" id="name" name="name"  style="width: 70%;"><br>
+            <input type="checkbox" id="terms" name="terms" >
+            <label for="terms">I agree to <a onclick="showTerms()" href="#">Terms and Conditions</a></label><br>
+            <input type="submit" id="f-btn">
+            <p id="terms-text"></p>
+        </form>
+
+        <!-- Another Ans -->
+
+        <!-- <form method="get" onsubmit="submitData()">
             <h1>Registration Form </h1>
             <label for="name">First Name: </label>
             <input type="text" id="name" name="name" required onkeypress="checkChar(event)" style="width: 70%;"><br>
@@ -16,7 +28,7 @@
             <label for="terms">I agree to <a onclick="showTerms()" href="#">Terms and Conditions</a></label><br>
             <input type="submit" id="f-btn">
             <p id="terms-text"></p>
-        </form>
+        </form> -->
         <script src="Task 4(form).js"></script>
     </body>
 </html>
