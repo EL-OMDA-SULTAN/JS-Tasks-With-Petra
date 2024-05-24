@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+                      /* index page style */
+body{
+    background-color: rgba(56, 125, 128, 0.623);
+}
+.text{
+    background-color: rgba(128, 128, 128, 0.409);
+    padding: 30px;
+    text-align: center;
+}
+
+.text label , .text input{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+} 
+
+.text input{
+    font-weight: 200;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+
+.clock{
+    padding: 30px;
+    text-align: center;
+}
+
+.clock .btn{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+.clock .btn:hover{
+    background-color: white;
+    border-color: red;
+}
+
+.clock .par{
+    text-align: left;
+    display: inline-block;
+    margin: 10px auto;
+    background-color: rgb(147, 147, 147);
+    width: 350px;
+    padding: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    height: 65px;
+    margin-right: 80px;
+}
+
+                      /* form page style */
+form{
+    background-color: white;
+    width: 33%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 80px auto;
+    font-size: 22px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.505) ,-3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+form h1{
+    text-align: center;
+    margin-bottom:20px ;
+}
+
+form input{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+form #terms-text{
+    padding: 10px 0;
+    height: 40px;
+}
+
+form #f-btn{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 8px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+form #f-btn:hover{
+    background-color: rgba(0, 0, 0, 0.263);
+}
