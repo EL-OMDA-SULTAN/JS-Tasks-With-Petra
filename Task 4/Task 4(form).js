@@ -3,7 +3,13 @@ function showTerms(){
 }
 
 function submitData(){
-    let newWindow=window.open('index.html');
+    let newWindow = window.open('index.html','_self');
+    // let addUrl=encodeURIComponent(new URLSearchParams(new FormData(document.forms[0])))
+    let addUrl='?name='+document.getElementById('name').value+'?terms='+
+    document.getElementById('terms').value;
+    const url = 'index.html'+ addUrl;
+    newWindow.location.href =url;
+    // let newWindow=window.open('index.html');
     newWindow.alert('submit Successfully');
 }
 
