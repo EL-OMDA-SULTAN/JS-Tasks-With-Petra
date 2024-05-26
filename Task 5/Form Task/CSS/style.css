@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(119, 136, 153, 0.505);
+}
+
+form{
+    background-color: rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    width: 35%;
+    padding: 20px;
+    margin:50px auto;
+    box-shadow: 1px 1px 8px rgba(12, 12, 12, 0.53),-1px -1px 8px rgba(12, 12, 12, 0.53);
+    font-weight: 600;
+}
+
+form #sub{
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: white;
+    color: black;
+}
+
+form #sub:hover{
+    background-color: blue;
+    color: white;
+}
+
+form #dis-none{
+    display: none;
+}

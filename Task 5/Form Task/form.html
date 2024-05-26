@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 JS (Form)</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <form >
+        <div class="mb-3">
+            <label for="Name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="Name" name="fullName">
+            <div id="Name-valid" class="form-text"></div>
+        </div><hr>
+        <div class="mb-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+            <div id="email-valid" class="form-text"></div>
+        </div><hr>
+        <div class="mb-4">
+            <label for="city" class="form-label">City</label>
+            <select class="form-select" aria-label="Default select example" id="city" name="city">
+                <option value="op" >Select city</option>
+                <option value="op1">Assuit</option>
+                <option value="op2">Cairo</option>
+                <option value="op3">Aswan</option>
+                <option value="op4">Sohag</option>
+                <option value="op5">Minya</option>
+            </select>
+            <div id="select-option" class="form-text"></div>
+        </div><hr>
+        <div class="mb-3">
+            <label class="form-label me-3">Gender </label><br>
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+            <label class="form-check-label mb-3" for="male"> Male </label><br>
+            <input class="form-check-input" type="radio" name="gender" id="fmale" value="female">
+            <label class="form-check-label" for="fmale">Female</label>
+        </div><hr>
+        <div class="mb-3" id="dis-none">
+            <label class="form-label me-3" >Military Service</label><br>
+            <input class="form-check-input" type="radio" name="military" id="complete">
+            <label class="form-check-label mb-3" for="complete">Completed</label><br>
+            <input class="form-check-input" type="radio" name="military" id="n-completed">
+            <label class="form-check-label" for="n-completed">Not Completed</label>
+        <hr></div>
+        <div class="mb-3">
+            <label class="form-label me-3">Courses</label><br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="course" id="course1">
+                <label class="form-check-label" for="course1"> Front End </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="course" id="course2">
+                <label class="form-check-label" for="course2"> Back End </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="course" id="course3">
+                <label class="form-check-label" for="course3"> AI </label>
+            </div>
+            <div id="select-course" class="form-text"></div>
+        </div><hr>
+            
+        <div class="mb-4">
+            <label for="Password1" class="form-label" >Password</label>
+            <input type="password" class="form-control" id="Password1" name="Password1">
+            <div id="pass-strong" class="form-text"></div>
+        </div><hr>
+        <div class="mb-4">
+            <label for="Password2" class="form-label">Repeat Password</label>
+            <input type="password" class="form-control" id="Password2" name="Password2">
+            <div id="pass-equel" class="form-text"></div>
+        </div><hr>
+        <div class="mb-4 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" name="terms">
+            <label class="form-check-label" for="terms">I Accept All Terms & Conditions</label>
+            <div id="terms-check" class="form-text"></div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="sub" name="sub">Register</button>
+    </form>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/form.js"></script>
+</body>
+</html>
