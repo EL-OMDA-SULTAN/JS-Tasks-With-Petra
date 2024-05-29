@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Images/icon.jpg">
+        <title>Learn English Letters</title>
+        <link rel="stylesheet" href="CSS/bootstrap.min.css"> <!-- Bootstrap css file -->
+        <link rel="stylesheet" href="CSS/style.css">         <!-- My css file -->
+        <script src="JS/jquery-3.7.1.js"></script>           <!-- Jquery file -->
+    </head>
+    <body>
+        <header>
+            <div class="container mt-3">
+                <div class="row text-center">
+                    <h1 class="">Learning English Letters</h1>
+                </div>
+            </div>
+        </header>
+        <section class="content mt-5">
+            <div class="container">
+                                    <!-- input And button show -->
+                <div class="row input-num justify-content-center mb-3">
+                    <div class="col-lg-7 col-md-9 col-sm-12 col-12">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="input" aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Show Characters</button>
+                        </div>
+                        <div class="text-center fs-5 fw-bold text-bg-light text-danger mb-2" id="invalid-input"></div>
+                    </div>
+                </div>
+                                    <!-- show characters buttons -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-10 col-12 text-center" id="char-button">
+                        <!-- <button class="btn me-2 mb-3 show-img">A</button> -->
+                    </div>
+                </div>
+                                    <!-- show characters images -->
+                <div class="row mt-3 justify-content-center" >
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-10" id="char-img">
+                    </div>
+                    <audio src="CSS/keypress.mp3" id="audio"></audio>
+                </div>
+            </div>
+        </section>
+        <script src="JS/bootstrap.bundle.min.js"></script> <!-- Bootstrap js file -->
+        <script src="JS/main.js"></script>                  <!-- My js file -->
+    </body>
+</html>
